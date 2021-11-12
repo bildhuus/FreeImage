@@ -271,7 +271,7 @@ FreeImage_Initialise(BOOL load_local_plugins_only) {
 			s_plugins->AddNode(InitJP2);
 			s_plugins->AddNode(InitPFM);
 			s_plugins->AddNode(InitPICT);
-			s_plugins->AddNode(InitRAW);
+			s_plugins->AddNode(InitPICT); // InitRAW - dirty hack to exclude libraw without disturbing the format numbering
 			s_plugins->AddNode(InitWEBP);
 			s_plugins->AddNode(InitJXR);
 			
