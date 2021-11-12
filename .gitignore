@@ -1,0 +1,8 @@
+*.a
+*.lib
+*.dll
+*.dylib
+*.so
+*.o
+.DS_Store
+Dist/FreeImage.h
