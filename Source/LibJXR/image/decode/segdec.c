@@ -29,6 +29,11 @@
 #include "strcodec.h"
 #include "decode.h"
 
+#ifdef __APPLE__
+    #include <libkern/OSByteOrder.h>
+    #define _byteswap_ulong(x) _OSSwapInt32
+#endif
+
 #ifdef MEM_TRACE
 #define TRACE_MALLOC    1
 #define TRACE_NEW       0

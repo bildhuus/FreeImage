@@ -29,6 +29,9 @@
 #include <limits.h>
 #include <JXRGlue.h>
 
+#ifdef __APPLE__
+    #include <wchar.h>
+#endif
 
 static const char szHDPhotoFormat[] = "<dc:format>image/vnd.ms-photo</dc:format>";
 const U32 IFDEntryTypeSizes[] = { 0, 1, 1, 2, 4, 8, 1, 1, 2, 4, 8, 4, 8 };
